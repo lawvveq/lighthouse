@@ -26,7 +26,7 @@ body {
 body {
   font-family: "Roboto", Arial, sans-serif;
   color: var(--text);
-  background: #000 url("images/lighthouse.jpg") left bottom / cover no-repeat;
+  background: var(--white);
 }
 
 a {
@@ -46,7 +46,23 @@ a:hover {
 }
 
 .hero {
+  position: relative;
   flex: 1;
+  background: #2b2f33 url("images/lighthouse.jpg") center 45% / cover no-repeat;
+}
+
+.hero__credit {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  font-size: 12px;
+  color: var(--white);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.hero__credit a {
+  color: var(--white);
+  text-decoration: underline;
 }
 
 .panel {
@@ -369,10 +385,6 @@ a:hover {
 /* ---------- responsive ---------- */
 
 @media (max-width: 768px) {
-  body {
-    background: var(--white);
-  }
-
   .hero {
     display: none;
   }
