@@ -48,7 +48,7 @@ a:hover {
 .hero {
   position: relative;
   flex: 1;
-  background: #2b2f33 url("images/lighthouse.jpg") center 45% / cover no-repeat;
+  background: #2b2f33 url("images/lighthouse-photo.jpg") center 45% / cover no-repeat;
 }
 
 .hero__credit {
